@@ -41,7 +41,7 @@ public class SplashScreenScript : MonoBehaviour {
 		Vector2 size = SplashScreenScript.getSize (), rSize = spRend.bounds.size;
 		Vector3 scaleToApply;
 		if (!scaleToFill) {
-			float scale = Mathf.Min (size.x / rSize.x, rSize.y / size.y);
+			float scale = Mathf.Min (size.x / rSize.x, size.y / rSize.y);
 			scaleToApply = new Vector3 (scale,scale,1);
 		}
 		else
