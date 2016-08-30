@@ -123,4 +123,4 @@ public class MyEditor : Editor{
 		EditorUtility.SetDirty(target);
 	}
 }
-#endif UNITY_EDITOR
+#endif
