@@ -8,7 +8,9 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 
 public class SplashScreenScript : MonoBehaviour {
 
@@ -99,6 +101,7 @@ public class SplashScreenScript : MonoBehaviour {
 	}
 }
 
+#if UNITY_EDITOR
 [CustomEditor(typeof(SplashScreenScript))]
 [CanEditMultipleObjects]
 public class MyEditor : Editor{
@@ -120,3 +123,4 @@ public class MyEditor : Editor{
 		EditorUtility.SetDirty(target);
 	}
 }
+#endif UNITY_EDITOR
